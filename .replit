@@ -1,6 +1,7 @@
 modules = ["python-3.11"]
 [nix]
 channel = "stable-25_05"
+packages = ["libxcrypt"]
 
 [agent]
 expertMode = true
@@ -8,7 +9,6 @@ expertMode = true
 [[ports]]
 localPort = 8000
 externalPort = 80
-exposeLocalhost = true
 
 [deployment]
 deploymentTarget = "cloudrun"
